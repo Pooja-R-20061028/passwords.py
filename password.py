@@ -19,9 +19,9 @@ def generate_password(length, use_letters=True, use_numbers=True, use_symbols=Tr
 print("=== Password Generator ===")
 try:
     length = int(input("Enter password length: "))
-    use_letters = input("Include letters? (y/n): ").lower() =='y'
-    use_numbers = input("Include numbers? (y/n): ").lower() =='y'
-    use_symbols = input("Include symbols? (y/n): ").lower() =='y'
+    use_letters =raw_input("Include letters? (y/n): ").lower() =='y'
+    use_numbers =raw_input("Include numbers? (y/n): ").lower() =='y'
+    use_symbols =raw_input("Include symbols? (y/n): ").lower() =='y'
 
     password = generate_password(length, use_letters, use_numbers, use_symbols)
     print(password)
